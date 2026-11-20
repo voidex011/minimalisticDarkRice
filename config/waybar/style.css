@@ -1,0 +1,129 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #000000;
+    color: #000000;
+    border: 2px solid #ffffff;
+}
+
+#waybar {
+    margin-left: 100px;   /* отступ слева */
+    margin-right: 100px;  /* отступ справа */
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #999999;
+}
+
+#workspaces button:hover {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 0;
+}
+
+#clock{
+    color: #ffffff;
+}
+#pulseaudio,
+#network,
+#battery {
+    padding: 0 12px;
+}
+
+#language {
+    color: #eceff4;            /* Цвет текста */
+    padding: 0 5px;           /* Отступы внутри модуля (0 сверху/снизу, 12px по бокам) */
+    font-weight: bold;         /* Жирный шрифт */
+}
+
+#pulseaudio {
+    color: #ffffff;
+    padding: 0 15px;
+}
+
+#network {
+    color: #89b4fa;
+}
+
+#battery {
+    color: #f9e2af;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #f38ba8;
+}
+
+#custom-power {
+    background-color: #000000; /* Красный фон кнопки */
+    color: #ffffff;            /* Белый цвет иконки ⏻ */
+    font-size: 16px;           /* Размер иконки */
+    padding: 0px 15px;         /* Внутренние отступы (сверху/снизу, слева/справа) */
+    margin: 4px;               /* Внешние отступы от краев панели */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window#waybar.bottom {
+    background: transparent;
+}
+
+/* Стилизация самого дока (объединяем все кастомные кнопки в одну панель) */
+window#waybar.bottom #window,
+window#waybar.bottom > box {
+    background: #000000; /* Темный полупрозрачный фон */
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    padding: 0px 0.000001px;
+}
+
+/* Явное перечисление всех созданных модулей запуска */
+window#waybar.bottom #custom-firefox,
+window#waybar.bottom #custom-chromium,
+window#waybar.bottom #custom-terminal,
+window#waybar.bottom #custom-steam,
+window#waybar.bottom #custom-files {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif; /* Имя вашего Nerd-шрифта */
+    font-size: 22px; /* Размер иконок */
+    padding: 0px 14px;
+    margin: 0px 4px;
+    color: #cdd6f4; /* Цвет иконки по умолчанию */
+    border-radius: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+window#waybar.bottom #custom-firefox:hover,
+window#waybar.bottom #custom-chromium:hover,
+window#waybar.bottom #custom-terminal:hover,
+window#waybar.bottom #custom-steam:hover,
+window#waybar.bottom #custom-files:hover {
+    font-size: 16px;
+}

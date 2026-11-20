@@ -1,0 +1,52 @@
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "margin-bottom": 10, // Эффект парения над нижним краем экрана
+    "margin-left": 15,
+    "margin-right": 15,
+    "margin-top": 0,
+
+    // Список ваших приложений по порядку слева направо
+    "modules-center": [
+        "custom/firefox", 
+        "custom/chromium", 
+        "custom/terminal", 
+        "custom/files",
+        "custom/steam"
+    ],
+
+    // Кнопка для Firefox
+    "custom/firefox": {
+        "format": "", // Символ иконки (см. Шаг 2)
+        "on-click": "firefox", // Команда запуска в системе
+        "tooltip-format": "Firefox"
+    },
+
+    // Кнопка для Chromium
+    "custom/chromium": {
+        "format": "", 
+        "on-click": "chromium", 
+        "tooltip-format": "Chromium"
+    },
+
+    // Кнопка для Терминала (например, Alacritty или Kitty)
+    "custom/terminal": {
+        "format": "", 
+        "on-click": "alacritty", // Замените на ваш терминал
+        "tooltip-format": "Терминал"
+    },
+
+    // Кнопка для Проводника (например, Nautilus, Thunar или Yazi)
+    "custom/files": {
+        "format": "", 
+        "on-click": "nautilus", // Замените на ваш файловый менеджер
+        "tooltip-format": "Файлы"
+    },
+
+    "custom/steam": {
+        "format": "◎",
+        "on-click": "steam",
+        "tooltip-format": "Steam"
+    }
+}

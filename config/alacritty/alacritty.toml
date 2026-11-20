@@ -1,0 +1,25 @@
+[window]
+decorations = "none"
+
+opacity = 1.0
+
+[colors.primary]
+background = "#000000"
+
+[colors.normal]
+black = "#000000" 
+
+[font]
+size = 16.0  # Установите здесь ваш комфортный размер
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
