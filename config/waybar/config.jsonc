@@ -8,32 +8,25 @@
     "margin-left": 15,
     "margin-right": 15,
 
-    // Позиция панели (top, bottom, left, right)
     "position": "top",
     
-    // Высота панели
     "height": 30,
     
-    // Прозрачность фона (0.0 - полностью прозрачный, 1.0 - непрозрачный)
     "opacity": 1.0,
     
-    // Модули слева
     "modules-left": ["niri/workspaces", "hyprland/window"],
     
-    // Модули по центру
     "modules-center": ["clock"],
     
-    // Модули справа
     "modules-right": ["custom/youtube","niri/language","pulseaudio","custom/power"],
     
-    // Настройки модуля рабочих столов (Hyprland)
 
-    // Настройки модуля рабочих столов Niri
+    // workspaces
     "niri/workspaces": {
         "format": "{index}", // Отображает цифры (1, 2, 3...) вместо имени
     },
 
-    // Настройки модуля часов
+    // clock
     "clock": {
         "format": "{:%H:%M}",
         "tooltip-format": "{:%A, %d %B %Y %H:%M}",
@@ -46,7 +39,7 @@
         "format-ru": "RU"
     },
 
-    // Настройки модуля громкости
+    // volume
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} ",
@@ -56,7 +49,7 @@
         },
     },
     
-    // Настройки модуля сети
+    // network
     "network": {
         "format": "{ifname}",
         "format-wifi": "  {essid}",
@@ -65,7 +58,7 @@
         "tooltip-format": "{ifname}: {ipaddr}"
     },
     
-    // Настройки модуля батареи
+    // battery
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
