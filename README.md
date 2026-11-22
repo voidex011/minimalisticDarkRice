@@ -40,7 +40,14 @@ cd minimalisticDarkRice
 cp -a config/. ~/.config/
 ```
 
-### 4. Wallpapers
+### 4. Install fonts
+```bash
+sudo pacman -S ttf-jetbrains-mono-nerd
+
+sudo pacman -S ttf-font-awesome
+```
+
+### 5. Wallpapers
 ```bash
 mkdir -p ~/Pictures/Wallpapers
 
