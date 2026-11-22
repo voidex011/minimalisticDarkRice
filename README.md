@@ -1,6 +1,6 @@
 # Minimalistic Dark Rice
 A minimal black and white rice for Niri
-:black_circle::white_circle:
+:black_circle: :white_circle:
 
 ## Preview
 ![](images/1.png)
